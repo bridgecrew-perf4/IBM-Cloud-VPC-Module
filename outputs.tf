@@ -17,7 +17,3 @@ output subnets {
 output cse_source_addresses {
   value = ibm_is_vpc.vpc.cse_source_addresses
 }
-
-output address_prefixes {
-  value = ibm_is_vpc.vpc.address_prefixes
-}
