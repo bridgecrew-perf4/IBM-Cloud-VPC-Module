@@ -19,5 +19,5 @@ output cse_source_addresses {
 }
 
 output default_network_acl {
-  value = ibm_is_vpc.vpc.default_security_group
+  value = ibm_is_vpc.vpc.default_network_acl
 }
