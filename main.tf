@@ -3,5 +3,5 @@ resource "ibm_is_vpc" "vpc" {
   classic_access            = var.classic_access
   address_prefix_management = var.address_prefix_management
   resource_group            = data.ibm_resource_group.group.id
-  tags                      = var.tags
+  tags = concat(var.tags, ["vpc"])
 }
