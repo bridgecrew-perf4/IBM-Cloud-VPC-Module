@@ -23,5 +23,5 @@ output default_network_acl {
 }
 
 output vpc {
-  value = ibm_is_vpc.vpc[*]
+  value = ibm_is_vpc.vpc
 }
