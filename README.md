@@ -10,7 +10,7 @@ data "ibm_resource_group" "group" {
 }
 
 module vpc {
-  source         = "git::https://github.com/cloud-design-dev/ibm-vpc-module.git"
+  source         = "git::https://github.com/cloud-design-dev/IBM-Cloud-VPC-Module.git"
   name           = var.name
   resource_group = data.ibm_resource_group.group.id
   tags           = ["project:${var.name}", "region:${var.region}"]
